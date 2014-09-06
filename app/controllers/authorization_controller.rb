@@ -11,8 +11,6 @@ class AuthorizationController < ApplicationController
 
   def validate
 
-    p session
-
     if params['error']
       puts "error=#{params['error']}, description=#{params['error_description']}"
       render :nothing => true, :status => 400
