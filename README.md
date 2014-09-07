@@ -26,7 +26,8 @@ OpenID Connect Implicit Flow を実装した Relaying Party のサンプルア�
 
 1. Rails アプリケーションの起動
 
-  $ CLIENT_ID=<YOUR CLIENT_ID> CALLBACK_URL=<YOUR CALLBACK URL> bundle exec rails s -p 5000
+
+  ``` $ CLIENT_ID=<YOUR CLIENT_ID> CALLBACK_URL=<YOUR CALLBACK URL> bundle exec rails s -p 5000 ```
 
 
 2. ```http://localhost:5000/``` にアクセスして下さい。
