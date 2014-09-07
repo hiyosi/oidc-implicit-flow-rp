@@ -38,8 +38,18 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'pry'
 gem 'execjs'
 gem 'therubyracer'
-gem 'unicorn'
 gem 'openid_connect'
+
+gem 'coveralls', require: false
+gem 'simplecov', :require => false, :group => :test
+
+group :development, :test do
+  gem 'pry'
+  gem 'minitest-rails'
+  gem 'mocha'
+  gem 'factory_girl_rails'
+  gem 'database_cleaner'
+  gem 'webmock'
+end

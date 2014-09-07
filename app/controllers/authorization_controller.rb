@@ -12,7 +12,7 @@ class AuthorizationController < ApplicationController
   def validate
 
     if params['error']
-      puts "error=#{params['error']}, description=#{params['error_description']}"
+      logger.error "error=#{params['error']}, description=#{params['error_description']}"
       render :nothing => true, :status => 400
       return
     end
@@ -59,4 +59,3 @@ class AuthorizationController < ApplicationController
     }
   end
 end
-

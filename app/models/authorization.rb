@@ -36,7 +36,7 @@ class Authorization < ActiveModelBase
 
     #stateパラメータのチェック
     unless fragment['state'] == state then
-      puts 'invalid state parameter.'
+      Rails.logger.error 'invalid state parameter.'
       return false
     end
 
@@ -51,7 +51,7 @@ class Authorization < ActiveModelBase
       oidc.id_token = id_token
       oidc.user_info = id_token.raw_attributes['userinfo']
     rescue => e
-      puts "error, #{e.message}"
+      Rails.logger.error "#{e.message}"
       return false
     end
 
