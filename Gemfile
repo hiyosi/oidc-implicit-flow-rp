@@ -44,6 +44,7 @@ gem 'openid_connect'
 
 gem 'coveralls', require: false
 gem 'simplecov', :require => false, :group => :test
+gem 'webmock', :group => :test
 
 group :development, :test do
   gem 'pry'
@@ -51,5 +52,5 @@ group :development, :test do
   gem 'mocha'
   gem 'factory_girl_rails'
   gem 'database_cleaner'
-  gem 'webmock'
+
 end
