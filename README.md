@@ -4,7 +4,7 @@
 [![Code Climate](https://codeclimate.com/github/hiyosi/oidc-implicit-flow-rp/badges/gpa.svg)](https://codeclimate.com/github/hiyosi/oidc-implicit-flow-rp)
 
 
-This project in reference to 'https://github.com/nov/openid_connect_sample_rp'
+このアプリケーションは 'https://github.com/nov/openid_connect_sample_rp' を参考にしています。
 
 OpenID Connect Implicit Flow を実装した Relaying Party のサンプルアプリケーションです。
 
