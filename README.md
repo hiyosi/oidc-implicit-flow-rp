@@ -18,7 +18,7 @@ OpenID Connect Implicit Flow を実装した Relaying Party のサンプルア�
 ````
  $ git clone https://github.com/hiyosi/oidc-implicit-flow-rp.git
 
- $ oidc-implicit-flow-rp
+ $ cd oidc-implicit-flow-rp
  
  $ bundle install --path=vendor/bundle
  ````
