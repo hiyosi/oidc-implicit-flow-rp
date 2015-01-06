@@ -49,7 +49,7 @@ class Authorization < ActiveModelBase
           nonce: nonce
       )
       oidc.id_token = id_token
-      oidc.user_info = id_token.raw_attributes['userinfo']
+      oidc.user_info = id_token.raw_attributes['user_info']
     rescue => e
       Rails.logger.error "#{e.message}"
       return false
